@@ -51,5 +51,8 @@ console.log(prof.nomComplet());
 console.log(prof.anneesExperience);
 console.log(prof.salaire);
 console.log(prof.coursEnseigne);
+
 prof.ajouterUnCours('2RP');
+console.log(prof.coursEnseigne);
+prof.ajouterUnCours('CG2');
 console.log(prof.coursEnseigne);
