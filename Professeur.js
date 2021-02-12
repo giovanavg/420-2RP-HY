@@ -40,13 +40,13 @@ class EmployeUniversiteProfesseur extends EmployeUniversite {
 
 //Code pour tester la classe d'un employé universitaire
 employe = new EmployeUniversite('Pierre', 'Martel', 'E0004', 5);
-employe.augmenterAncienneté();
+employe.augmenterAnciennete();
 console.log(employe.nomComplet());
 console.log(employe.anneesExperience);
 
 //Code pour tester la classe d'un professeur universitaire
 prof = new EmployeUniversiteProfesseur('Carmel', 'Simon', 'P0007', 4, 65000, []);
-prof.augmenterAncienneté();
+prof.augmenterAnciennete();
 console.log(prof.nomComplet());
 console.log(prof.anneesExperience);
 console.log(prof.salaire);
