@@ -1,3 +1,6 @@
+/**
+ * Cette classe représente un employé de une Université
+ */
 class EmployeUniversite {
     constructor(nom, prenom, numeroEmploye, anneesExperience) {
         this.nom = nom;
@@ -15,6 +18,9 @@ class EmployeUniversite {
     }
 }
 
+/**
+ * Cette classe représente un professeur de une Université
+ */
 class EmployeUniversiteProfesseur extends EmployeUniversite {
     constructor(nom, prenom, numeroEmploye, anneesExperience, salaire, coursEnseigne) {
         super(nom, prenom, numeroEmploye, anneesExperience);
@@ -27,11 +33,13 @@ class EmployeUniversiteProfesseur extends EmployeUniversite {
     }
 }
 
+//Code pour tester la classe d'un employé universitaire
 employe = new EmployeUniversite('Pierre', 'Martel', 'E0004', 5);
 employe.augmenterAncienneté();
 console.log(employe.nomComplet());
 console.log(employe.anneesExperience);
 
+//Code pour tester la classe d'un professeur universitaire
 prof = new EmployeUniversiteProfesseur('Carmel', 'Simon', 'P0007', 4, 65000, []);
 prof.augmenterAncienneté();
 console.log(prof.nomComplet());
