@@ -22,15 +22,6 @@ class EmployeUniversiteProfesseur extends EmployeUniversite {
         this.coursEnseigne = coursEnseigne;
     }
 
-    //On ne peut pas avoir des methodes avec des noms égales au propriétés
-    //Ce code donnera erreur
-    salaire(){
-        return this.salaire;
-    }
-    coursEnseigne(){
-        return this.coursEnseigne;
-    } 
-
     ajouterUnCours(nouveauCours){
         this.coursEnseigne[this.coursEnseigne.length] = nouveauCours;
     }
