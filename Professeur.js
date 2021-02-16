@@ -4,7 +4,7 @@
  * Date : 05 février 2021
  */
 /**
- * Cette classe représente un employé de une Université
+ * Cette classe représente un employé d'une Université
  */
 class EmployeUniversite {
     constructor(nom, prenom, numeroEmploye, anneesExperience) {
@@ -21,10 +21,16 @@ class EmployeUniversite {
     nomComplet() {
         return this.prenom + ", " + this.nom;
     }
+
+    information() {
+        return this.numeroEmploye + " - "
+            + this.nomComplet() +
+            " - Ancienneté: " + this.anneesExperience;
+    }
 }
 
 /**
- * Cette classe représente un professeur de une Université
+ * Cette classe représente un professeur d'une Université
  */
 class EmployeUniversiteProfesseur extends EmployeUniversite {
     constructor(nom, prenom, numeroEmploye, anneesExperience, salaire, coursEnseigne) {
@@ -33,7 +39,7 @@ class EmployeUniversiteProfesseur extends EmployeUniversite {
         this.coursEnseigne = coursEnseigne;
     }
 
-    ajouterUnCours(nouveauCours){
+    ajouterUnCours(nouveauCours) {
         this.coursEnseigne[this.coursEnseigne.length] = nouveauCours;
     }
 }
@@ -51,6 +57,7 @@ console.log(prof.nomComplet());
 console.log(prof.anneesExperience);
 console.log(prof.salaire);
 console.log(prof.coursEnseigne);
+console.log(prof.information());
 
 prof.ajouterUnCours('2RP');
 console.log(prof.coursEnseigne);
